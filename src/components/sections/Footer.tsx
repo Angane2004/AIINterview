@@ -168,7 +168,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="flex items-center space-x-2 text-white/60 text-sm">
-              <span>© 2024 Smart Interview. All rights reserved.</span>
+              <span>© 2025 Smart Interview. All rights reserved.</span>
               <span>•</span>
               <span>Made with</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
