@@ -10,10 +10,7 @@ import {
   Database, 
   Cloud, 
   Lock,
-  Cpu,
-  Network,
   Server,
-  Globe
 } from 'lucide-react'
 
 export default function Technology() {

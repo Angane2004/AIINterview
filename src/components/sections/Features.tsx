@@ -12,10 +12,6 @@ import {
   Video, 
   MessageSquare, 
   Zap,
-  UserCheck,
-  FileSearch,
-  Mic,
-  TrendingUp
 } from 'lucide-react'
 
 export default function Features() {
