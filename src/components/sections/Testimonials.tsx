@@ -16,7 +16,7 @@ export default function Testimonials() {
       role: 'Software Engineer',
       company: 'Google',
       avatar: '/api/placeholder/60/60',
-      content: 'The AI feedback was incredibly detailed and helped me identify specific areas for improvement. I landed my dream job at Google within 3 months of using the platform!',
+      content: '',
       rating: 5
     },
     {
@@ -24,7 +24,7 @@ export default function Testimonials() {
       role: 'Product Manager',
       company: 'Microsoft',
       avatar: '/api/placeholder/60/60',
-      content: 'The practice sessions with AI were so realistic. It helped me build confidence and improve my communication skills significantly. Highly recommended!',
+      content: '',
       rating: 5
     },
     {
@@ -32,7 +32,7 @@ export default function Testimonials() {
       role: 'Data Scientist',
       company: 'Amazon',
       avatar: '/api/placeholder/60/60',
-      content: 'The progress tracking feature is amazing. I could see my improvement over time and the personalized coaching recommendations were spot on.',
+      content: '',
       rating: 5
     },
     {
@@ -40,7 +40,7 @@ export default function Testimonials() {
       role: 'UX Designer',
       company: 'Apple',
       avatar: '/api/placeholder/60/60',
-      content: 'This platform transformed my interview preparation. The AI analysis is incredibly accurate and the feedback is actionable. Worth every penny!',
+      content: '',
       rating: 5
     },
     {
@@ -48,7 +48,7 @@ export default function Testimonials() {
       role: 'Marketing Director',
       company: 'Netflix',
       avatar: '/api/placeholder/60/60',
-      content: 'The multi-format support is fantastic. I could practice with video, audio, and text interviews. The platform is intuitive and the results speak for themselves.',
+      content: '',
       rating: 5
     }
   ]
