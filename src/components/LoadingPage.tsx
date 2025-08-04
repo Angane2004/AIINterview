@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Brain, Sparkles, Zap, Target, Users, TrendingUp } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 export default function LoadingPage() {
   const loadingSteps = [
@@ -12,6 +13,17 @@ export default function LoadingPage() {
     { text: 'Connecting to Database', icon: Users },
     { text: 'Ready to Transform Interviews', icon: Zap }
   ]
+
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight
+      })
+    }
+  }, [])
 
   return (
     <div className="fixed inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 flex items-center justify-center overflow-hidden">
@@ -169,14 +181,14 @@ export default function LoadingPage() {
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            initial={{ 
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+            initial={{
+              x: Math.random() * windowSize.width,
+              y: Math.random() * windowSize.height,
               opacity: 0
             }}
-            animate={{ 
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+            animate={{
+              x: Math.random() * windowSize.width,
+              y: Math.random() * windowSize.height,
               opacity: [0, 1, 0]
             }}
             transition={{
@@ -190,4 +202,4 @@ export default function LoadingPage() {
       </div>
     </div>
   )
-} 
+}

@@ -9,6 +9,9 @@ import Technology from '@/components/sections/Technology'
 import Footer from '@/components/sections/Footer'
 import AuthModal from '@/components/auth/AuthModal'
 import LoadingPage from '@/components/LoadingPage'
+import dynamic from 'next/dynamic';
+
+
 
 export default function Home() {
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false)
